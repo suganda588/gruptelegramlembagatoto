@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>JOIN Telegram LEMBAGATOTO</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      background: url('https://i.postimg.cc/Y0ZhV99V/background-lembagatoto.jpg') no-repeat center center fixed; 
+      background-size: cover; 
+      color: #fff; 
+      text-align: center; 
+      padding: 20px; 
+      overflow: hidden; 
+      position: relative; 
+    }
+    h1 { 
+      color: #e67300; 
+      font-weight: 900; 
+      text-transform: uppercase;
+      z-index: 1; 
+      position: relative; 
+      -webkit-text-stroke: 1px #fff; 
+      text-stroke: 1px #fff; 
+      text-shadow: 
+        1px 1px 0 #fff,
+        2px 2px 1px rgba(255,255,255,0.6),
+        3px 3px 3px rgba(0,0,0,0.4),
+        0 0 10px rgba(230, 115, 0, 0.9),
+        0 0 20px rgba(230, 130, 0, 0.6),
+        0 0 40px rgba(230, 150, 20, 0.4);
+    }
+    p { color: #eee; text-shadow: 1px 1px 2px #000; z-index: 1; position: relative; }
+    .link-box { 
+      background: rgba(23, 33, 43, 0.8); 
+      margin: 15px auto; 
+      padding: 10px; 
+      width: 90%; 
+      max-width: 320px; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4); 
+      transition: transform 0.2s ease-in-out; 
+      border: 1px solid #f58c1f;
+      z-index: 1; 
+      position: relative;
+    }
+    .link-box:hover { transform: scale(1.05); }
+    .link-box a { 
+      background: #f58c1f;
+      color: #fff; 
+      text-decoration: none; 
+      font-size: 16px; 
+      font-weight: bold; 
+      display: block;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #cc7700;
+      box-shadow: inset 0 0 5px rgba(255,255,255,0.2);
+      transition: background 0.2s ease-in-out;
+    }
+    .link-box a:hover { background: #d07c14; }
+
+    /* Light Rain Effect CSS */
+    .light-rain-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .light-particle {
+      position: absolute;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+      width: 2px;
+      height: 50px;
+      border-radius: 50%;
+      opacity: 0;
+      animation: lightFall linear infinite;
+    }
+
+    @keyframes lightFall {
+      0% { transform: translateY(-100%); opacity: 0; }
+      10% { opacity: 0.8; }
+      90% { opacity: 0.8; }
+      100% { transform: translateY(110vh); opacity: 0; }
+    }
+
+    /* Star particles CSS */
+    .star-container {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .star {
+      position: absolute;
+      background: radial-gradient(circle, #fff 0%, rgba(255,255,255,0) 70%);
+      border-radius: 50%;
+      opacity: 0.8;
+      width: 3px;
+      height: 3px;
+      filter: drop-shadow(0 0 3px #fff);
+      animation-name: starFall;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    @keyframes starFall {
+      0% {
+        transform: translateY(-10px);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.8;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(110vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="star-container" id="starContainer"></div>
+  <div class="light-rain-container" id="lightRainContainer"></div>
+
+  <h1>Join Telegram: LEMBAGATOTO</h1>
+  <p>Klik tombol di bawah untuk masuk ke grup:</p>
+
+  <div class="link-box"><a href="https://web.telegram.org/k/#@groupofficiallembagatoto" target="_blank" rel="noopener noreferrer">Group Claim Event LEMBAGATOTO</a></div>
+  <div class="link-box"><a href="https://web.telegram.org/k/#@grouplembagatotoofficial" target="_blank" rel="noopener noreferrer">Group Claim Freebet LEMBAGATOTO</a></div>
+  <div class="link-box"><a href="https://web.telegram.org/k/#@lembagatotoofficial" target="_blank" rel="noopener noreferrer">LEMBAGATOTO OFFICIAL</a></div>
+
+  <script>
+    // Light rain particles
+    const lightRainContainer = document.getElementById('lightRainContainer');
+    const numberOfLightParticles = 70;
+
+    for (let i = 0; i < numberOfLightParticles; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'light-particle';
+      particle.style.left = Math.random() * 100 + 'vw'; 
+      particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      particle.style.animationDelay = (Math.random() * 5) + 's';
+      lightRainContainer.appendChild(particle);
+    }
+
+    // Star particles (slow falling)
+    const starContainer = document.getElementById('starContainer');
+    const numberOfStars = 40;
+
+    for(let i = 0; i < numberOfStars; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.left = Math.random() * 100 + 'vw';
+      const size = 1.5 + Math.random() * 2.5;
+      star.style.width = size + 'px';
+      star.style.height = size + 'px';
+      star.style.animationDuration = (15 + Math.random() * 15) + 's';
+      star.style.animationDelay = (Math.random() * 30) + 's';
+      starContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>
